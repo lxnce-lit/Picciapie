@@ -1,0 +1,128 @@
+/* === 1. COLORS ===*/
+:root {
+  --brown:       #5a3a22;
+  --dark-brown:  #3b2416;
+  --light-brown: #c68b4e;
+  --cream:       #fffaf4;
+}
+
+
+/* === 2. BASE === */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  color: var(--dark-brown);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* === 3. NAVBAR === */
+.navbar {
+  background-color: var(--dark-brown);
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+}
+
+.navbar .nav-link {
+  color: white !important;
+}
+
+.navbar .nav-link:hover {
+  color: var(--light-brown) !important;
+}
+
+
+/* === 4. BUTTONS === */
+.btn-pie {
+  background-color: var(--brown);
+  color: white;
+  border: none;
+}
+
+.btn-pie:hover {
+  background-color: var(--light-brown);
+  color: var(--dark-brown);
+}
+
+
+/* === 5. SECTIONS === */
+section {
+  padding: 80px 0;
+}
+
+.tint {
+  background-color: var(--cream);
+}
+
+
+/* === 6. HOME / HERO === */
+.hero {
+  background-color: var(--brown);
+  color: white;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-weight: bold;
+}
+
+.hero .lead {
+  color: #f0dcc6;
+}
+
+.pie-art {
+  font-size: 100px;
+  text-align: center;
+}
+
+
+/* === 7. CARDS & PRICE === */
+.card {
+  border: 1px solid #e8d8c4;
+}
+
+.card-img-top {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  background-color: #f3e6d6;
+}
+
+.price {
+  color: var(--brown);
+  font-weight: bold;
+}
+
+
+/* ==== 8. FOOTER === */
+footer {
+  background-color: var(--dark-brown);
+  color: #d8c3ad;
+}
+
+
+/* === 9. MOBILE  === */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+    padding: 70px 20px;
+  }
+
+  .pie-art {
+    font-size: 80px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+}
